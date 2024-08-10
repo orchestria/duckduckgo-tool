@@ -1,3 +1,9 @@
+# /// script
+# requires-python = "~=3.12"
+# dependencies = ["duckduckgo-search"]
+# ///
+
+
 import json
 import sys
 
@@ -8,7 +14,8 @@ from duckduckgo_search.exceptions import (
     TimeoutException,
 )
 
-if __name__ == "__main__":
+
+def search():
     args = sys.argv[-1]
     data = json.loads(args)
     if "query" not in data:
@@ -25,3 +32,7 @@ if __name__ == "__main__":
         raise e
 
     print(json.dumps([a["text"] for a in answers]))
+
+
+if __name__ == "__main__":
+    search()

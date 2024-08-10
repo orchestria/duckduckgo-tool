@@ -2,7 +2,7 @@
   "name": "DuckDuckGo search",
   "description": "Search the web for small snippets of information",
   "language": "python",
-  "entrypoint": "duckduckgo/search.py",
+  "entrypoint": "search.py",
   "inputs_schema": {
     "type": "object",
     "properties": {
