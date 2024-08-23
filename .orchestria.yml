@@ -11,8 +11,3 @@ tools:
           type: string
       required:
         - query
-    outputs_schema:
-      description: List of the summarized results
-      type: array
-      items:
-        type: string
